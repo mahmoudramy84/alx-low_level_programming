@@ -6,8 +6,6 @@
  */
 int main(void)
 {
-	int main(void)
-{
 	char abe[] = "_putchar";
 
 	int c;
