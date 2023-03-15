@@ -35,5 +35,5 @@ char *str_concat(char *s1, char *s2)
 			sum[c] = s2[d++];
 	}
 
-	return (a);
+	return (sum);
 }
