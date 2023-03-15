@@ -19,10 +19,7 @@ char *create_array(unsigned int size, char c)
     if (arr == NULL)
         return (0);
     for( i = 0; i < size ; i++ )
-    {
         arr[i] = c; 
-    }
     arr[i] = '\0';
     return (arr);
-    free(arr);
 }
