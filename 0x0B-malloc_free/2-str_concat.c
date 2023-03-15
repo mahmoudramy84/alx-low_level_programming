@@ -18,9 +18,9 @@ char *str_concat(char *s1, char *s2)
     if (s2 == NULL)
         s2 = "";
 
-    for (a = 0; s1[a] != '/0'; a++)
+    for (a = 0; s1[a] != '\0'; a++)
         ;
-    for (b = 0; s2[b] != '/0'; b++)
+    for (b = 0; s2[b] != '\0'; b++)
         ;
 
     sum  = malloc((a * sizeof(*s1)) + (b * sizeof(*s2)) + 1);
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (c = 0, d = 0; c < (a + b + 1); c++)
 	{
-		if (c < i)
+		if (c < d)
 			sum[c] = s1[c];
 		else
 			sum[c] = s2[d++];
