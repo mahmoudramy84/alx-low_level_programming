@@ -4,7 +4,6 @@
  * @b: size of memory to be allocated.
  *
  * Reeturn: pointer to the allocated memory
- *
 */
 void *malloc_checked(unsigned int b)
 {
