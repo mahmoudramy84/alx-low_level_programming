@@ -8,16 +8,19 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
+    /* creating va_list to store the variable argument list */
     va_list arg;
     int sum = 0;
-    va_start(arg, n);
 
     if (n == 0)
        return 0;
+    /* init valist for the number of arguments */
+    va_start(arg, n);
 
+    /* loop through/access all arguments stored in the valist */
     for (int i=0; i<n; i++)
         sum += va_arg(arg, int);
 
-    return sum;
     va_end(arg);
+    return sum;
 }
