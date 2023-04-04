@@ -26,4 +26,17 @@ if (idx == 0)
 new->next = temp;
 *head = new;
 return (new);
+
+for (node = 0; node < (idx - 1); node++)
+{
+if (temp == NULL || temp->next == NULL)
+return (NULL);
+
+temp = temp->next;
+}
+
+new->next = temp->next;
+temp->next = new;
+
+return (new);
 }
