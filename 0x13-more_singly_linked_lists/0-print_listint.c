@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- *print_listint -prints all the elemnts of alist.
- *@h: singly linked list.
+ * print_listint -prints all the elemnts of alist.
+ * @h: singly linked list.
  *
  * Return: the numbers of node.
  */
