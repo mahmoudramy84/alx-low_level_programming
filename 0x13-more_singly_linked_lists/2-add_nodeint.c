@@ -2,8 +2,8 @@
 
 /**
  * listint_t -adds anew node at the beginning of alist.
- * @head:
- * @n:
+ * @head: pointer to pointer.
+ * @n: Numper to add.
  * Return: address of the new elemnt, or NULL if it failed.
  */
 listint_t *add_nodeint(listint_t **head, const int n)
